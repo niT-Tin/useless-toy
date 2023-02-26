@@ -8,5 +8,5 @@
 .patch 文件使用方法
 
 ```shell
-patch <original-file> < file.patch
+patch -p0 < <filename>.patch
 ```
