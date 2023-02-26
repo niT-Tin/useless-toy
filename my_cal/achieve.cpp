@@ -197,7 +197,7 @@ void param_two(char *cpMonthRange, int *ipRange) //将命令行参数转化为�
 void gotoxy(int x, int y) //转跳光标
 {
 #if __linux
-	printf("\033[%d;%dH ", y, x);
+	printf("\033[%d;%dH", y, x + 1);
 #elif _WIN64
 	HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
 	COORD pos;
