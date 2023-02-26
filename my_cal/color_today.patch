@@ -1,0 +1,15 @@
+--- achieve.cpp	2023-02-26 13:25:36.032048191 +0800
++++ achieve1.cpp	2023-02-26 13:25:17.965637446 +0800
+@@ -281,7 +281,11 @@
+ 						else
+ 							gotoxy(x1, ++fy);
+ 					}
+-					cout << right << setw(3) << z;
++					if (k == iMONTHS && z == iDAY)
++					  cout << right << setw(3) << " \033[1;32m\033[1;44m" << z
++					       << "\033[0m";
++					else
++					  cout << right << setw(3) << z;
+ 					count++;
+ 					if (iBlank == 0 && count == 6)
+ 					{
