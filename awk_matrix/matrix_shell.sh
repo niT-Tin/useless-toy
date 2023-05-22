@@ -2,7 +2,7 @@
 
 echo -e "\e[1;40m";
 clear;
-arr=(10 20 38)
+
 while :;
 do
   echo $LINES $COLUMNS $(( RANDOM % COLUMNS )) $(( RANDOM % 72 ));
